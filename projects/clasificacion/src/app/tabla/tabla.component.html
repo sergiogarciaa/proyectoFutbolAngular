@@ -1,0 +1,30 @@
+<table class="table table-bordered table-sm text-center table-hover"> 
+    <thead>
+        <tr class="bg-primary">
+            <th>Equipo</th>
+            <th>PJ</th>
+            <th>G</th>
+            <th>E</th>
+            <th>P</th>
+            <th>GF</th>
+            <th>GC</th>
+            <th>PT</th>
+            <th>GoalAverage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let clasificacion of clasificacion">
+            <td class="bg-primary ">{{clasificacion.equipo}}</td>
+            <td class="bg-success">{{clasificacion.PJ}}</td>
+            <td class="bg-warning">{{clasificacion.G}}</td>
+            <td class="bg-danger">{{clasificacion.E}}</td>
+            <td class="bg-info">{{clasificacion.P}}</td>
+            <td class="bg-light">{{clasificacion.GF}}</td>
+            <td class="bg-secondary">{{clasificacion.GC}}</td>
+            <td class="bg-success">{{clasificacion.PT}}</td>
+            <td class="bg-warning">{{clasificacion.DG}}</td>
+        </tr>
+    </tbody>
+    
+    
+  </table>
